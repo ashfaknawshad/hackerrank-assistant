@@ -42,3 +42,5 @@ The extension is now ready to use!
 4.  Click the **"2. Send to AI"** button. This sends the clipboard content to Gemini.
 5.  Wait for the loading animation to complete.
 6.  The AI-generated solution will appear. Click **"Copy Solution"** to copy it.
+
+### You can download the latest version from the [Releases](https://github.com/ashfaknawshad/hackerrank-assistant/releases) page.
