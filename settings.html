@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HackerRank Assistant Settings</title>
+  <link rel="stylesheet" href="popup.css"> <!-- We can reuse the popup's style! -->
+  <style>
+    body { width: 400px; } /* Make settings page wider */
+    #apiKey { margin-bottom: 10px; width: 100%; padding: 8px; box-sizing: border-box; }
+    #status { color: #1ba94c; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h3>Settings</h3>
+  <p>Enter your Google AI Studio API Key:</p>
+  <input type="password" id="apiKey" placeholder="Paste your API key here">
+  <button id="saveButton">Save Key</button>
+  <p id="status" class="hidden"></p>
+
+  <script src="settings.js"></script>
+</body>
+</html>

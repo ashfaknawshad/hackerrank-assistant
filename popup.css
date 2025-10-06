@@ -1,0 +1,117 @@
+/**
+ * popup.css (v3 - HackerRank Theme)
+ */
+
+body {
+  width: 320px; /* Wider for better code display */
+  padding: 15px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #f3f7f7;
+  border: 1px solid #dfe5e6;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1c2b33; /* HackerRank's dark text color */
+  font-weight: 600;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* HackerRank Green Buttons */
+#copyForAI, #sendToAI {
+  background-color: #1ba94c;
+  border-color: #199945;
+}
+
+#copyForAI:hover, #sendToAI:hover {
+  background-color: #189643;
+}
+
+/* --- View Management --- */
+.hidden {
+  display: none;
+}
+
+/* --- New Loading View Styles (Pulsing Dots) --- */
+#loadingView p {
+  font-size: 15px;
+  color: #39424e;
+}
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.loading-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1ba94c;
+  margin: 0 5px;
+  animation: pulse 1.4s infinite ease-in-out both;
+}
+.loading-dots .dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots .dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulse {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+/* --- Result View Styles for "Pretty Code" --- */
+pre {
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  /* The background comes from the highlight.js theme, but we add padding */
+}
+code#resultText {
+  padding: 15px !important;
+  text-align: left;
+  max-height: 200px;
+  display: block;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+#copyResult {
+  background-color: #39424e; /* Dark secondary color */
+}
+#copyResult:hover {
+  background-color: #1c2b33;
+}
+
+/* --- Settings Button Style --- */
+#settingsButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: #70757a;
+  cursor: pointer;
+}
+#settingsButton:hover {
+  color: #1c2b33;
+}
